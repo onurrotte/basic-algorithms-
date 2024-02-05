@@ -1,67 +1,53 @@
+//1. Addition
 
-// JS Algorithms_Basic
-// 1. Print 1 - 135
-for ( var i=1 ; i <= 135 ; i++){
-    console.log(i)
-}
-// 2. Print Odd Numbers 1 - 135
-
- var second = document.getElementById('second')
-for ( var i =1 ; i <= 135 ; i++){
-    if( i % 2 != 0){
-        console.log(i)
+let sum = 0;
+    for ( let i=200 ; i<=2700; i++){
+        if( (i % 3 === 0  || i % 5 === 0 ) && ( i % 15 !==0)){
+        sum += i;}
     }
-}
-// 3. Sum of Printed Numbers
-
-function numSum(){
-    let sum = 0;
-      for(i = 0; i <= 135; i++){
-        sum += i; 
-         }
     console.log(sum)
-         }
-         numSum(135);
 
-//4. Print the elements of an array
-let myArr =['1, 4, 2, 12']
-console.log(myArr)
 
-// 5. Find Max
-let numbers = [ 4, 8, 44, - 1 , 0]
-let max = numbers[0];
-for ( let i = 0 ; i<numbers.length ; i++ ){
-    if (numbers[i] > max){
-        max = numbers[i]
+
+    //2. Shift the Values
+
+    const simple = [4,5,6,7,8]
+    const simleLast = simple.reverse()
+    console.log(simleLast)
+
+
+    //3. FizzBuzz
+    let arr = [''];
+        for ( var i=1 ; i<=135 ; i++) {
+            if ( i % 15 === 0 ){
+                arr[i] = "fizzbuzz"
+            }
+            else if ( i % 5 === 0){
+                arr[i] = "buzz"
+            }
+           else if ( i % 3 ===0){
+                arr[i] = "fizz"
+            }
+            else {
+                arr [i] = i
+            }
+        }
+        console.log(arr)
+
+    // 5. Remove the Negative
+    const numbers = [ 4, -1, 5, -2, 10, -19]
+    for ( i=0; i< numbers.length; i++){
+        if (numbers[i] < 0 ){
+            delete numbers[i]
+        }
     }
-}
-console.log(max)
+    console.log(numbers)
 
-// 6. Get Average
-
-let simple = [ 3, 6, 9, 12]
-let sum = 0 
-for ( let i=0 ; i < simple.length ; i++){
-    sum += simple[i]
-    var avg = simple.length
-}
-var rslt = sum/avg;
-console.log(rslt)
-
-//7. Eliminate the Negatives
-
-var ex = [4, 0, -4, 1, -11]
-for( i=0; i<ex.length; i++){
-    if ( ex[i] < 0 ){
-        ex[i]=0
+    // 6. Communist Censorship
+    let x = [ 'Man', 'I','Love','The','Matrix','Program']
+   for ( i =0; i < x.length; i++){
+    if ( x[i] === 'Program'){
+        x[i]='*******'
     }
-}
-console.log(ex)
-
-//8. Number to String
-var eight = [ 11, 22, -33, 44, -55]
-for( i=0 ; i<eight.length ; i++){
-    if(eight[i]<0)
-    eight[i]="turing"
-}
-console.log(eight)
+   }
+   console.log(x)
