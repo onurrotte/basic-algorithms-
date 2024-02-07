@@ -1,0 +1,15 @@
+function factorial(numbers) {
+    if ( numbers < 0) {
+        console.log('factoriel does not work with negative numbers')
+    }
+    else if ( numbers === 0){
+       return 1
+    }
+//basic logis is this n!=n*(n-1) (except negative numbers and zero)
+    else{
+        return (numbers * factorial( numbers - 1));
+    }
+        
+}
+console.log(factorial(5))
+
