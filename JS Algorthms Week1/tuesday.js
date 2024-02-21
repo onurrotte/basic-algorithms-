@@ -11,9 +11,10 @@ let sum = 0;
 
     //2. Shift the Values
 
-    const simple = [4,5,6,7,8]
-    const simleLast = simple.reverse()
-    console.log(simleLast)
+ const x= [1,2,3,4,5]
+const r =[...x].reverse()
+console.log(r)
+console.log(x)
 
 
     //3. FizzBuzz
