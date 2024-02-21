@@ -14,14 +14,13 @@ for ( var i =1 ; i <= 135 ; i++){
 }
 // 3. Sum of Printed Numbers
 
-function numSum(){
-    let sum = 0;
-      for(i = 0; i <= 135; i++){
-        sum += i; 
-         }
-    console.log(sum)
-         }
-         numSum(135);
+  let sum = 0;
+for (let i = 1; i <= 135; i++) {
+  
+  sum += i;
+  console.log(`Number: ${i} | Sum: ${sum}`);
+}
+
 
 //4. Print the elements of an array
 let myArr =['1, 4, 2, 12']
