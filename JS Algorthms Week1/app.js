@@ -23,8 +23,9 @@ for (let i = 1; i <= 135; i++) {
 
 
 //4. Print the elements of an array
-let myArr =['1, 4, 2, 12']
-console.log(myArr)
+const x = [ 1,4,2,13]
+for(let i=0; i<x.length; i++)
+console.log(x[i])
 
 // 5. Find Max
 let numbers = [ 4, 8, 44, - 1 , 0]
